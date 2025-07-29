@@ -1,0 +1,18 @@
+body {
+    background: white;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    color: green;
+}
+
+button:hover {
+    background: yellow;
+}
