@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f5ba079-aa69-47ba-8488-e64ad89aae79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cartoon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cartoon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gridview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Landing_Page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,8 +38,10 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.Index.html.executor": "Run",
     "JavaScript Debug.Khaosat.html.executor": "Run",
+    "JavaScript Debug.Landing_Page.html.executor": "Run",
     "JavaScript Debug.cartoon.html.executor": "Run",
     "JavaScript Debug.form.html.executor": "Run",
+    "JavaScript Debug.gallery.html.executor": "Run",
     "JavaScript Debug.gridview.html.executor": "Run",
     "JavaScript Debug.nangcao.html.executor": "Run",
     "JavaScript Debug.nhung_css.html.executor": "Run",
@@ -82,7 +82,9 @@
       <workItem from="1753192609102" duration="1403000" />
       <workItem from="1753358091810" duration="3316000" />
       <workItem from="1753788296792" duration="2834000" />
-      <workItem from="1753962887948" duration="2371000" />
+      <workItem from="1753962887948" duration="2672000" />
+      <workItem from="1754230188748" duration="498000" />
+      <workItem from="1754401678730" duration="375000" />
     </task>
     <servers />
   </component>
