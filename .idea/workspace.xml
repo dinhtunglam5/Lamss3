@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f5ba079-aa69-47ba-8488-e64ad89aae79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Landing_Page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing_Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Landing_Page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,33 +32,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.Index.html.executor": "Run",
-    "JavaScript Debug.Khaosat.html.executor": "Run",
-    "JavaScript Debug.Landing_Page.html.executor": "Run",
-    "JavaScript Debug.cartoon.html.executor": "Run",
-    "JavaScript Debug.form.html.executor": "Run",
-    "JavaScript Debug.gallery.html.executor": "Run",
-    "JavaScript Debug.gridview.html.executor": "Run",
-    "JavaScript Debug.nangcao.html.executor": "Run",
-    "JavaScript Debug.nhung_css.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "main",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.Index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Khaosat.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Landing_Page.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cartoon.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.form.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.gallery.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.gridview.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.nangcao.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.nhung_css.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admin\WebstormProjects\Buoi_3" />
@@ -84,7 +83,8 @@
       <workItem from="1753788296792" duration="2834000" />
       <workItem from="1753962887948" duration="2672000" />
       <workItem from="1754230188748" duration="498000" />
-      <workItem from="1754401678730" duration="375000" />
+      <workItem from="1754401678730" duration="696000" />
+      <workItem from="1754405341143" duration="69000" />
     </task>
     <servers />
   </component>
