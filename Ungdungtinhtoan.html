@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tính toán </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input {
+      width: 100px;
+      padding: 5px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 5px 10px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+<h2>Máy tính </h2>
+
+<form id="calcForm">
+  <input type="number" id="num1" placeholder="Nhập số 1">
+  <input type="number" id="num2" placeholder="Nhập số 2">
+  <br><br>
+  <button type="button" onclick="add()">Addition(+)</button>
+  <button type="button" onclick="subtract()">Subtraction(-)</button>
+  <button type="button" onclick="multiply()">Multiplication(X)</button>
+  <button type="button" onclick="divide()">Division(/)</button>
+</form>
+
+<h3>Kết quả: <span id="result"></span></h3>
+
+<script>
+  function getValues() {
+    let a = parseFloat(document.getElementById("num1").value);
+    let b = parseFloat(document.getElementById("num2").value);
+    return [a, b];
+  }
+
+  function add() {
+    let [a, b] = getValues();
+    document.getElementById("result").innerText = a + b;
+  }
+
+  function subtract() {
+    let [a, b] = getValues();
+    document.getElementById("result").innerText = a - b;
+  }
+
+  function multiply() {
+    let [a, b] = getValues();
+    document.getElementById("result").innerText = a * b;
+  }
+
+  function divide() {
+    let [a, b] = getValues();
+    if (b === 0) {
+      document.getElementById("result").innerText = "Không thể chia cho 0";
+    } else {
+      document.getElementById("result").innerText = a / b;
+    }
+  }
+</script>
+</body>
+</html>
