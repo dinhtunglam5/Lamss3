@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Days in Month</title>
+</head>
+<body>
+    <input type="number" id="month" placeholder="Enter month">
+    <button id="calculator">Calculator</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("calculator").onclick = () => {
+            let month = +document.getElementById("month").value;
+            let result = document.getElementById("result");
+            if (month < 1 || month > 12) {
+                result.textContent = "Invalid month. Please enter a month between 1 and 12.";
+                return;
+            }
+
+            let daysInMonth = [31, (new Date().getFullYear() % 4 === 0 && new Date().getFullYear() % 100 !== 0) || (new Date().getFullYear() % 400 === 0) ? 29 : 28,
+                               31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1];
+
+            result.textContent = `Month ${month} has ${daysInMonth} days.`;
+        };
+    </script>
+</body>
+</html>
