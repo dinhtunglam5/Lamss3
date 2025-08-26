@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 10</title>
+</head>
+<body>
+<h2>Bài 10: Tính tiền điện</h2>
+<script>
+  let soDien = +prompt("Nhập số kWh tiêu thụ:");
+  let donGia;
+  if (soDien <= 50)
+    donGia = 1800;
+  else if (soDien <= 100)
+    donGia = 2000;
+  else
+    donGia = 3000;
+
+  let tien = soDien * donGia;
+  alert("Tiền điện = " + tien + " VNĐ (đơn giá " + donGia + ")");
+</script>
+</body>
+</html>

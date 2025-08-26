@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Bài 3: Hình vuông</title>
 </head>
 <body>
-    <script>
-        let number = parseFloat(prompt("Enter a number:"));
-        if(number >0){
-            document.write(`${number} lớn hơn 0.`);
-        } else if(number < 0) {
-            document.write(`${number} nhỏ hơn 0.`);
-        } else {
-            document.write("Số là 0.");
-        }
-    </script>
+  <h2>Bài 3: Tính diện tích hình vuông</h2>
+  <button onclick="tinh()">Tính diện tích</button>
+
+  <script>
+    function tinh() {
+      let a = +prompt("Nhập cạnh a:");
+      if (a > 0)
+        alert("Diện tích hình vuông = " + a * a);
+      else
+        alert("Cạnh phải > 0");
+    }
+  </script>
 </body>
 </html>

@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Bài 5</title>
 </head>
 <body>
-    <script>
-        let diemKT = parseFloat(prompt("Nhập điểm kiểm tra:"));
-        let diemGK = parseFloat(prompt("Nhập điểm giữa kỳ:"));
-        let diemCK = parseFloat(prompt("Nhập điểm cuối kỳ:"));
-        let diemTB = (diemKT + diemGK + diemCK) / 3;
-        if(diemTB < 0 || diemTB > 10) {
-            document.write("Điểm trung bình không hợp lệ. Vui lòng nhập lại.");
-        } else if(diemTB < 5) {
-            document.write("B đạt danh hiệu HSTB.");
-        } else if(diemTB >= 5 && diemTB < 8) {
-            document.write("B đạt danh hiệu HSK.");
-        } else {
-            document.write("B đạt danh hiệu HSG.");
-        }
-    </script>
+<h2>Bài 5: Tính diện tích tam giác vuông</h2>
+<script>
+  let a = +prompt("Nhập cạnh a:");
+  let b = +prompt("Nhập cạnh b:");
+  if (a > 0 && b > 0)
+    alert("Diện tích tam giác vuông = " + a * b / 2);
+  else
+    alert("Cạnh phải lớn hơn 0");
+</script>
 </body>
 </html>
