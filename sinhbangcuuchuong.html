@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bảng Cửu Chương</title>
+  <style>
+    table { border-collapse: collapse; margin: auto; }
+    td { border: 1px solid #333; padding: 6px 10px; text-align: center; }
+    caption { font-weight: bold; margin: 10px; }
+  </style>
+</head>
+<body>
+  <table id="bangCuuChuong">
+    <caption>BẢNG CỬU CHƯƠNG</caption>
+  </table>
+
+  <script>
+    const table = document.getElementById("bangCuuChuong");
+    for (let i = 2; i <= 9; i++) {
+      const row = table.insertRow();
+      for (let j = 1; j <= 9; j++) 
+        row.insertCell().textContent = `${i} × ${j} = ${i * j}`;
+    }
+  </script>
+</body>
+</html>

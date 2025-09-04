@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 8: Game đoán số</title>
+</head>
+<body>
+  <button onclick="playGame()">Chơi</button>
+  <script>
+    function playGame() {
+      let min = +prompt("Nhập số nhỏ nhất:");
+      let max = +prompt("Nhập số lớn nhất:");
+      if (isNaN(min) || isNaN(max) || min >= max) {
+        alert("Khoảng không hợp lệ!");
+        return;
+      }
+
+      let random = Math.floor(Math.random() * (max - min + 1)) + min;
+
+      while (true) {
+        let guess = +prompt(`Đoán một số từ ${min} đến ${max}:`);
+        if (isNaN(guess)) {
+          alert("Vui lòng nhập số!");
+          continue;
+        }
+        if (guess === random) {
+          alert("🎉 Chúc mừng! Bạn đã đoán đúng!");
+          break;
+        }
+        alert(guess < random ? "Số bạn đoán nhỏ hơn." : "Số bạn đoán lớn hơn.");
+      }
+    }
+  </script>
+</body>
+</html>
