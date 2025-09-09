@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển đơn giản</title>
+</head>
+<body>
+    <h2>Từ điển Anh - Việt</h2>
+    <form onsubmit="searchWord(); return false;">
+        <input type="text" id="englishWord" placeholder="Nhập từ tiếng Anh">
+        <button type="submit">Tìm kiếm</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        const dictionary = {
+            "hello": "xin chào",
+            "cat": "mèo",
+            "dog": "chó",
+            "apple": "táo",
+            "book": "sách"
+        };
+
+        function searchWord() {
+            const word = document.getElementById("englishWord").value.trim().toLowerCase();
+            const result = dictionary[word] ? "Nghĩa tiếng Việt: " + dictionary[word] : "Không tìm thấy";
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
