@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay thế ký tự '-' bằng '_'</title>
+</head>
+<body>
+    <script>
+        // 1. Nhập chuỗi từ người dùng
+        let input = prompt("Nhập vào một chuỗi ký tự (ví dụ: a-b-c-d-e):");
+
+        // 2. Chuyển chuỗi thành mảng ký tự
+        let arr = input.split('');
+
+        // 3. Duyệt mảng và thay '-' thành '_'
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === '-') {
+                arr[i] = '_';
+            }
+        }
+
+        // 4. Ghép mảng lại thành chuỗi
+        let result = arr.join('');
+
+        // 5. In ra kết quả
+        document.write("Chuỗi ban đầu: " + input + "<br>");
+        document.write("Chuỗi sau khi thay thế: " + result);
+    </script>
+</body>
+</html>
