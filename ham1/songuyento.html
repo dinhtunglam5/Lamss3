@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Số nguyên tố</title>
+</head>
+<body>
+  <script>
+    function countPrimes(limit) {
+      let count = 0;
+      for (let n = 2; n < limit; n++) {
+        let prime = true;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+          if (n % i === 0) { 
+            prime = false; 
+            break; 
+          }
+        }
+        if (prime) count++;
+      }
+      return count;
+    }
+
+    document.write(`Có ${countPrimes(10000)} số nguyên tố nhỏ hơn 10.000.`);
+  </script>
+</body>
+</html>

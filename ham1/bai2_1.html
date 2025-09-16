@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <label for="a">Số a:</label>
+  <input type="number" id="a" value="4"><br><br>
+  
+  <label for="b">Số b:</label>
+  <input type="number" id="b" value="4"><br><br>
+
+  <p id="result"></p>
+
+  <script>
+    function sum() {
+      const a = +document.getElementById("a").value;
+      const b = +document.getElementById("b").value;
+      return a * a + b * b;
+    }
+
+    document.getElementById("result").textContent = sum();
+  </script>
+
+</body>
+</html>

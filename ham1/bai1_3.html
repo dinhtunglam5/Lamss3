@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check and Sum</title>
+</head>
+<body>
+  <script>
+    function checkAndSum(a, b) {
+      if (a > b) {
+        alert("Giá trị của tham số thứ nhất lớn hơn tham số thứ hai.");
+      } else {
+        return a + b;
+      }
+    }
+
+    // Ví dụ 1: a > b
+    checkAndSum(10, 5);
+
+    // Ví dụ 2: a < b
+    document.write(checkAndSum(3, 8) + "<br>");
+
+    // Ví dụ 3: a == b
+    document.write(checkAndSum(7, 7));
+  </script>
+</body>
+</html>
