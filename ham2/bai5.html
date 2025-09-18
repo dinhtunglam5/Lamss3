@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tìm số lớn nhất</title>
+</head>
+<body>
+  <label>Nhập số thứ nhất: </label>
+  <input type="number" id="ST1"><br>
+
+  <label>Nhập số thứ hai: </label>
+  <input type="number" id="ST2"><br>
+
+  <label>Nhập số thứ ba: </label>
+  <input type="number" id="ST3"><br>
+
+  <button onclick="findMax()">Tìm số lớn nhất</button>
+
+  <script>
+    function findMax() {
+      const n1 = +document.getElementById("ST1").value;
+      const n2 = +document.getElementById("ST2").value;
+      const n3 = +document.getElementById("ST3").value;
+      const maxNum = Math.max(n1, n2, n3);
+      alert("Số lớn nhất là: " + maxNum);
+    }
+  </script>
+</body>
+</html>

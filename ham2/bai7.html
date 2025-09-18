@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đổi chỗ số</title>
+</head>
+<body>
+
+  <h2>Đổi chỗ hai số</h2>
+  <label>Số thứ nhất:</label>
+  <input type="text" id="ST1"><br><br>
+
+  <label>Số thứ hai:</label>
+  <input type="text" id="ST2"><br><br>
+
+  <button onclick="NumberSwap()">Hoán đổi</button>
+
+  <script>
+    function NumberSwap() {
+      let st1 = document.getElementById("ST1");
+      let st2 = document.getElementById("ST2");
+
+      // Đổi chỗ bằng cách gán tạm
+      [st1.value, st2.value] = [st2.value, st1.value];
+
+      alert(`Sau khi swap: ST1 = ${st1.value}, ST2 = ${st2.value}`);
+    }
+  </script>
+
+</body>
+</html>

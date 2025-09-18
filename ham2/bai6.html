@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiểm Tra Chẵn Lẻ</title>
+</head>
+<body>
+  <label for="number">Nhập vào 1 số bất kỳ:</label>
+  <input type="number" id="number">
+  <button onclick="checkEvenOdd()">Kiểm tra</button>
+
+  <script>
+    function checkEvenOdd() {
+      const num = parseInt(document.getElementById("number").value);
+      
+      if (isNaN(num)) {
+        alert("Vui lòng nhập vào một số hợp lệ.");
+        return;
+      }
+
+      if (num % 2 === 0) {
+        alert(num + " là số chẵn.");
+      } else {
+        alert(num + " là số lẻ.");
+      }
+    }
+  </script>
+</body>
+</html>

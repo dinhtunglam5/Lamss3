@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đảo ngược mảng</title>
+</head>
+<body>
+  <script>
+    function reverseArrayManually(arr) {
+      let newArray = [];
+      for (let i = arr.length - 1; i >= 0; i--) {
+        newArray.push(arr[i]);
+      }
+      return newArray;
+    }
+
+    // Mảng gốc
+    let originalNumbers = [10, 20, 30, 40];
+    let newReversedArray = reverseArrayManually(originalNumbers);
+
+    document.write("Mảng đã đảo ngược: " + newReversedArray + "<br>");
+    document.write("Mảng gốc (không bị thay đổi): " + originalNumbers);
+  </script>
+</body>
+</html>
