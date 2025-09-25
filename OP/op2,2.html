@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class ElectricLamp {
+      constructor(status = "off") { this.status = status; }
+      getStatus() { return this.status; }
+      turnOn() { this.status = "on"; }
+      turnOff() { this.status = "off"; }
+    }
+
+    class SwitchButton {
+      constructor(lamp, status = "off") {
+        this.status = status;
+        this.lamp = lamp;
+      }
+      press() {
+        if (this.status === "off") {
+          this.status = "on"; this.lamp.turnOn();
+        } else {
+          this.status = "off"; this.lamp.turnOff();
+        }
+      }
+    }
+
+    let lamp = new ElectricLamp();
+    let button = new SwitchButton(lamp);
+
+    document.write(`Đèn ban đầu: ${lamp.getStatus()}<br>`);
+    for (let i = 1; i <= 10; i++) {
+      button.press();
+      document.write(`Sau lần nhấn ${i}: ${lamp.getStatus()}<br>`);
+    }
+  </script>
+</body>
+</html>
